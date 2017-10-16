@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rollup": "^0.50.0",
+    "webpack": "^3.7.1"
+  }
+}

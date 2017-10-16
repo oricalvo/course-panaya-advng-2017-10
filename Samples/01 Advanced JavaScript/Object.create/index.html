@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = {
+            id: 123,
+        };
+
+        var b = Object.create(a);
+
+        b.id = "xxx";
+
+        console.log(b.id);
+    </script>
+</body>
+</html>
