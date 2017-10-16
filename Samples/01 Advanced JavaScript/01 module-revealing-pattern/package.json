@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "angular": "^1.6.6",
+    "jquery": "^3.2.1",
+    "systemjs": "^0.20.19",
+    "webpack": "^3.7.1"
+  }
+}
