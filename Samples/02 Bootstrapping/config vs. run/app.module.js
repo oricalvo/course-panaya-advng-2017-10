@@ -1,9 +1,18 @@
-const myApp = angular.module("myApp", []);
+const myModule = angular.module("myModule", []);
 
-myApp.service("xxx", function() {
+const myApp = angular.module("myApp", ["myModule"]);
+
+myModule.config(function() {
+    console.log("myModule.config");
+});
+
+myModule.run(function() {
+    console.log("myModule.run");
 });
 
 myApp.config(["$controllerProvider", function($controllerProvider) {
+    console.log("myApp.config");
+
     console.log("config", $controllerProvider);
 
     //myApp.$controllerProvider = $controllerProvider;
@@ -12,5 +21,7 @@ myApp.config(["$controllerProvider", function($controllerProvider) {
 }]);
 
 myApp.run(["$rootScope", function($rootScope) {
+    console.log("myApp.run");
+
     console.log("run", $rootScope);
 }]);

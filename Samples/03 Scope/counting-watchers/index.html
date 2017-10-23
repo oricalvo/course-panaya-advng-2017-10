@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Watchers {{$$watchersCount}}</h1>
+
+    <div ng-controller="AppCtrl as $ctrl">
+        {{$ctrl.title}}
+
+        <div ng-controller="HomeCtrl as $ctrl">
+            {{$ctrl.title}}
+        </div>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="home.controller.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
