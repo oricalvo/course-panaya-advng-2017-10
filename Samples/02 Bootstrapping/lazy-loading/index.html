@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="AppCtrl">
+        <h1>My App</h1>
+
+        <button ng-click="gotoHome()">Goto Home</button>
+
+        <div id="home" ng-if="view == 'home'" ng-controller="HomeCtrl">
+            <h2>Home</h2>
+        </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
