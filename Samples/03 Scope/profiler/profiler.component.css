@@ -1,0 +1,24 @@
+app-profiler {
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    background-color: black;
+    color: white;
+    width: 10em;
+    height: 10em;
+}
+
+app-profiler .counter {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.25em;
+}
+
+app-profiler .label {
+    width: 100%;
+}
+
+app-profiler .value {
+}
+
+
