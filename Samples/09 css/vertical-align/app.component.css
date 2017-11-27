@@ -1,0 +1,32 @@
+app-root {
+    display: block;
+    font-size: 16px;
+}
+
+app-root .parent {
+    background-color: yellow;
+    height: 3em;
+    text-align: center;
+    font-size: 4em;
+}
+
+app-root .parent::before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+}
+
+app-root .a {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+app-root .b {
+    vertical-align: middle;
+}
+
+app-root button {
+    font-size: 2rem;
+}
+

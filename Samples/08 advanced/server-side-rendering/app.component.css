@@ -1,3 +1,23 @@
 app-root {
     display: block;
 }
+
+app-root  button {
+    background-color: red;
+}
+
+app-root > button {
+    background-color: blue;
+}
+
+app-root a:visited {
+    color: yellow;
+}
+
+app-root a:active {
+    color: red;
+}
+
+app-root::before {
+    content: '';
+}
