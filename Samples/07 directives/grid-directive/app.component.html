@@ -1,0 +1,14 @@
+<h1>Grid directive</h1>
+
+<grid model="$ctrl.contacts" model-item="contact">
+    <columns>
+        <column title="ID">
+            <a href="#">{{contact.id}}</a>
+        </column>
+
+        <column title="Name">
+            <span>{{contact.name}}</span>
+            <button ng-click="$ctrl.deleteContact(contact, $index)">Delete</button>
+        </column>
+    </columns>
+</grid>

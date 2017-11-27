@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span>{{counter}}</span>
+
+    <script>
+        const begin = performance.now();
+
+//        Promise.resolve().then(function() {
+//            const after = performance.now();
+//
+//            console.log(after-begin);
+//        });
+
+//        setTimeout(function() {
+//            const after = performance.now();
+//
+//            console.log(after-begin);
+//        }, 0);
+
+        const span = document.querySelector("span");
+
+        queueStep(0);
+
+        function queueStep(i) {
+            if(i==100) {
+                return;
+            }
+
+            setTimeout(function() {
+                step(i);
+            }, 0);
+        }
+
+        function step(i) {
+            const begin = new Date();
+
+            while(true) {
+                const now = new Date();
+
+                if(now - begin > 50) {
+                    break;
+                }
+            }
+
+            span.innerText = i;
+
+            queueStep(i+1);
+        }
+
+        //console.log("XXX");
+
+    </script>
+</body>
+</html>
